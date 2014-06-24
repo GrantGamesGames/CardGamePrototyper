@@ -1,0 +1,12 @@
+<div ng-include="'partials/navbar'"
+     class="doNotPrint"></div>
+
+<div ng-repeat="(key, value) in cardList"
+     class="cardItem page-break">
+	<div class="card">
+		<div class="cardContent">
+			<h1>{{value.type.Name}}</h1>
+			<p>{{value.type.Description}}</p>
+		</div>
+	</div>
+</div>
