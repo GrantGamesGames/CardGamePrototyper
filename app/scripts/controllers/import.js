@@ -12,7 +12,14 @@ angular.module('cardGamePrototyper')
 	.controller('ImportCtrl', function($scope, $http) {
 		$scope.import = function() {
 			if ($scope.data) {
-				console.log('data:', $scope.data);
+				var csvOptions = {
+					cast: true,
+					header: true
+				};
+				var csvData = new CSV($scope.data, csvOptions);
+				console.log('csvData:', csvData);
+				var convertedJson = csvData.parse();
+				console.log('convertedJson:', convertedJson);
 			}
 		};
 	});

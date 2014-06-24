@@ -8,7 +8,8 @@
     "jquery": "~1.11.0",
     "bootstrap-sass-official": "~3.1.1",
     "underscore": "~1.6.0",
-    "angular-ui-router": "~0.2.10"
+    "angular-ui-router": "~0.2.10",
+    "comma-separated-values": "~3.2.0"
   },
   "devDependencies": {
     "angular-mocks": ">=1.2.*",
