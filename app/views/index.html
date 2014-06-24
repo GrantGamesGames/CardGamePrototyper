@@ -17,6 +17,7 @@
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/import.css">
     <!-- endbuild -->
   </head>
   <body ng-app="cardGamePrototyper">
@@ -25,7 +26,22 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <ui-view></ui-view>
+    <div class="container">
+      <nav></nav>
+      <div class="viewLoader"
+         ng-class="{loading: isViewLoading}">
+         <p>Loading...</p>
+      </div>
+      <div ui-view
+           autoscroll='false'>
+      </div>
+
+      <div class="footer">
+        <p>&copy; God Hates Games 2014</p>
+        <p>You may use this tool for any project, including commercial games.</p>
+      </div>
+
+    </div> <!-- /container -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>

@@ -10,7 +10,9 @@ angular.module('cardGamePrototyper')
 		});
 	})
 	.controller('ImportCtrl', function($scope, $http) {
-		$http.get('/api/awesomeThings').success(function(awesomeThings) {
-			$scope.awesomeThings = awesomeThings;
-		});
+		$scope.import = function() {
+			if ($scope.data) {
+				console.log('data:', $scope.data);
+			}
+		};
 	});
