@@ -70,44 +70,44 @@ body {
 	margin: 0 auto;
 	float: left;
 	width: 200px;
-}
 
-.card:before {
-	/*relative size hack*/
-	content: "";
-	display: block;
-	padding-top: 150%;
-	/* END relative size hack*/
-}
+	&:before {
+		/*relative size hack*/
+		content: "";
+		display: block;
+		padding-top: 150%;
+		/* END relative size hack*/
+	}
 
-.hint {
-	position: absolute;
-	top: 7%;
-	left: 10%;
-	margin: 0;
-}
+	.hint {
+		position: absolute;
+		top: 6%;
+		left: 10%;
+		margin: 0;
+	}
 
-.cardContent {
-	/* relative size hack*/
-	position:  absolute;
-	top: 50%;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	/* END relative size hack*/
-	padding: 0 6% 6% 6%;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	font-size: 15px;
-	color: black !important;
+	.cardContent {
+		/* relative size hack*/
+		position:  absolute;
+		top: 50%;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		/* END relative size hack*/
+		padding: 0 6% 6% 6%;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		font-size: 15px;
+		color: black !important;
 
-	h2 {
-		margin-top: 0;
-		font-size: 18px;
+		h2 {
+			margin-top: 0;
+			font-size: 18px;
+		}
 	}
 }
 
