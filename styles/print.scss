@@ -1,0 +1,73 @@
+// Print Styles
+$card-border-size: 1px;
+
+@media all {
+	.page-break	{
+		display: none;
+	}
+}
+
+@media print {
+	.page-break	{
+		display: block;
+		page-break-after: always;
+	}
+
+	body {
+		margin: 0;
+	}
+
+}
+
+.cardItem {
+	display: inline-flex; //its like a block, but it floats and breaks for printing!
+	// font-size: 0;
+	margin-top: -$card-border-size; // to overlap borders
+	margin-right: -$card-border-size; // to overlap borders
+	margin-left: auto;
+	margin-bottom: auto;
+
+	.card {
+		position: relative;
+		border: $card-border-size solid #DDD;
+		text-align: center;
+		margin: 0;
+		width: 2.5in;
+		height: 3.5in;
+		overflow: hidden;
+
+		.cardContent {
+			position: relative;
+			top: 50%;
+			left: 0;
+			padding: 0 6% 6% 6%;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			font-size: 15px;
+			color: black !important;
+
+			h2 {
+				margin-top: 0;
+				font-size: 18px;
+			}
+		}
+
+		.hint {
+			position: absolute;
+			top: 6%;
+			left: 10%;
+			margin: 0;
+		}
+	}
+}
+
+
+@media print {
+	.doNotPrint {
+		display: none;
+	}
+}
