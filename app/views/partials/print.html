@@ -1,9 +1,10 @@
-<div ng-repeat="(key, value) in cardList"
+<div ng-repeat="(key, card) in cardList"
      class="cardItem page-break">
 	<div class="card">
+		<h3 class="hint">{{card.type.Hint}}</h3>
 		<div class="cardContent">
-			<h1>{{value.type.Name}}</h1>
-			<p>{{value.type.Description}}</p>
+			<h2>{{card.type.Name}}</h2>
+			<p>{{card.type.Description}}</p>
 		</div>
 	</div>
 </div>

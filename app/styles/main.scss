@@ -80,13 +80,11 @@ body {
 	/* END relative size hack*/
 }
 
-.card svg {
-	width: 50%;
-	height: 50%;
+.hint {
 	position: absolute;
-	top: 10%;
-	left: 50%;
-	margin-left: -25%;
+	top: 7%;
+	left: 10%;
+	margin: 0;
 }
 
 .cardContent {
@@ -97,7 +95,7 @@ body {
 	bottom: 0;
 	right: 0;
 	/* END relative size hack*/
-	padding: 6%;
+	padding: 0 6% 6% 6%;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -107,7 +105,7 @@ body {
 	font-size: 15px;
 	color: black !important;
 
-	h1 {
+	h2 {
 		margin-top: 0;
 		font-size: 18px;
 	}

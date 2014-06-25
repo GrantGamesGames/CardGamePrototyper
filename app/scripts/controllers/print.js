@@ -6,20 +6,27 @@ angular.module('cardGamePrototyper')
 			url: '/print',
 			title: 'Print your data',
 			templateUrl: 'partials/print',
-			controller: 'PrintCtrl'
+			controller: 'PrintCtrl',
+			resolve: {
+				userData: ['user', '$q', function(user, $q) {
+					if(user.data) {
+						return user.data;
+					} else {
+						return $q.reject();
+					}
+				}]
+			}
 		});
 	})
-	.controller('PrintCtrl', function($scope, $http) {
+	.controller('PrintCtrl', function(userData, $scope, user, $state) {
 		$scope.cardList = [];
 
-		$http.get('/api/awesomeThings').success(function(awesomeThings) {
-			_.each(awesomeThings, function(value) {
-				_.times(value.Quantity, function() {
-					var card = {
-						type: value
-					};
-					$scope.cardList.push(card);
-				});
+		_.each(user.data, function(cardDef) {
+			_.times(cardDef.Quantity, function() {
+				var card = {
+					type: cardDef
+				};
+				$scope.cardList.push(card);
 			});
 		});
 	});

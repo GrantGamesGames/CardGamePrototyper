@@ -6,7 +6,8 @@ angular.module('cardGamePrototyper', ['ui.router'])
 	$urlRouterProvider.otherwise('/import');
 	
 })
-.run(function($rootScope) {
+.run(function($rootScope, user, $state) {
+
 		// loading animation
 		$rootScope.setLoading = function() {
 			$rootScope.isViewLoading = true;
@@ -27,8 +28,9 @@ angular.module('cardGamePrototyper', ['ui.router'])
 
 		$rootScope.$on('$stateChangeError', function (ev, to, toParams, from, fromParams, error) {
 			$rootScope.unsetLoading();
-			console.log('Error transitioning to state', to.controller, error.message);
-			console.log(error.stack);
+			if(to.name !== 'import') {
+				$state.go('import');
+			}
 		});
 	}
 );

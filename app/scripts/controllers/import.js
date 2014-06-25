@@ -9,17 +9,11 @@ angular.module('cardGamePrototyper')
 			controller: 'ImportCtrl'
 		});
 	})
-	.controller('ImportCtrl', function($scope, $http) {
+	.controller('ImportCtrl', function($scope, user, $state) {
 		$scope.import = function() {
 			if ($scope.data) {
-				var csvOptions = {
-					cast: true,
-					header: true
-				};
-				var csvData = new CSV($scope.data, csvOptions);
-				console.log('csvData:', csvData);
-				var convertedJson = csvData.parse();
-				console.log('convertedJson:', convertedJson);
+				user.setCsvWithStr($scope.data);
+				$state.go('print');
 			}
 		};
 	});
