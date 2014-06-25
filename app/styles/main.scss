@@ -54,7 +54,9 @@ body {
 
 	body {
 		margin: 0;
+		padding: 0;
 	}
+
 }
 
 	.cardItem {
@@ -69,21 +71,14 @@ body {
 	text-align: center;
 	margin: 0 auto;
 	float: left;
-	width: 200px;
+	width: 2.5in;
 
 	&:before {
 		/*relative size hack*/
 		content: "";
 		display: block;
-		padding-top: 150%;
+		padding-top: 3.5in;
 		/* END relative size hack*/
-	}
-
-	.hint {
-		position: absolute;
-		top: 6%;
-		left: 10%;
-		margin: 0;
 	}
 
 	.cardContent {
@@ -108,6 +103,13 @@ body {
 			margin-top: 0;
 			font-size: 18px;
 		}
+	}
+
+	.hint {
+		position: absolute;
+		top: 6%;
+		left: 10%;
+		margin: 0;
 	}
 }
 
