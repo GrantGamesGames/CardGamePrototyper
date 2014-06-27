@@ -12,7 +12,8 @@ angular.module('cardGamePrototyper')
 	function _setCsvWithStr(csvStr) {
 		var csvOptions = {
 			cast: false,
-			header: true
+			header: true,
+			line: '\n'
 		};
 		var csvData = new CSV(csvStr, csvOptions);
 		userService.data = csvData.parse();
