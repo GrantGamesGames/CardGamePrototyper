@@ -36,8 +36,91 @@
       <div ui-view
            autoscroll='false'>
       </div>
+      
+      <div class="row doNotPrint">
+        <div class="col-md-12">
+          <h1>
+            <a name="user-content-cardgameprototyper" class="anchor" href="#cardgameprototyper" aria-hidden="true">
+              <span class="octicon octicon-link"></span>
+            </a>CardGamePrototyper</h1>
 
-      <div class="footer">
+          <p>CSV -&gt; printable card game.</p>
+
+          <h2>
+            <a name="user-content-what-is-this" class="anchor" href="#what-is-this" aria-hidden="true">
+              <span class="octicon octicon-link"></span>
+            </a>What is this?</h2>
+
+          <p>This tool takes in CSV take and generates a printable card game. Works in Chrome, Safari, Firefox as far as I know. I recommend Chrome as its handling of printing is the best.</p>
+
+          <h2>
+            <a name="user-content-thanks-for-this-free-tool-how-do-i-complain" class="anchor" href="#thanks-for-this-free-tool-how-do-i-complain" aria-hidden="true">
+              <span class="octicon octicon-link"></span>
+            </a>Thanks for this free tool, how do I complain?</h2>
+
+          <p>This tool is pretty new, so don't expect much, but if you run in to any problems please report them on <a href="https://github.com/astrism/CardGamePrototyper/issues">GitHub Issues</a>!</p>
+
+          <h2>
+            <a name="user-content-how-do-i-use-this" class="anchor" href="#how-do-i-use-this" aria-hidden="true">
+              <span class="octicon octicon-link"></span>
+            </a>How do I use this?</h2>
+
+          <p>Grab a CSV file, I use Google Spreadsheets to put mine together and most spreadsheet apps can export to csv. Your CSV can have any fields but the app only uses these:</p>
+
+          <ul class="task-list">
+            <li>Name</li>
+            <li>Quantity</li>
+            <li>Hint</li>
+            <li>Description</li>
+          </ul>
+          <p>Here is an example:</p>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Hint</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Seer</td>
+                <td>1</td>
+                <td>S</td>
+                <td>When instructed, pick one player and the moderator will tell you if they're a werewolf.</td>
+              </tr>
+              <tr>
+                <td>Werewolf</td>
+                <td>2</td>
+                <td>W</td>
+                <td>At nightfall open your eyes and pick a victim</td>
+              </tr>
+              <tr>
+                <td>Villager</td>
+                <td>4</td>
+                <td>V</td>
+                <td>At daybreak try to find the werewolf</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Which would produce when exported:</p>
+
+<pre lang="csv"><code>Name,Quantity,Hint,Description
+Seer,1,S,"When instructed, pick one player and the moderator will tell you if they're a werewolf."
+Werewolf,2,W,At nightfall open your eyes and pick a victim
+Villager,4,V,At daybreak try to find the werewolf</code></pre>
+
+          <p>Next paste that csv data into the app and press
+            <strong>Import Data</strong>. This will convert the CSV to printable Poker Size (2.5" * 3.5") cards.</p>
+
+          <p>Now print! When printing I recommend Landscape, which fits the most poker size cards.</p>
+        </div>
+      </div>
+      
+      <div class="footer doNotPrint">
+        <hr>
         <p>You may use this tool for any project, including commercial games.</p>
         <p>
           Made by <a href="http://godhatesgames.com">God Hates Games</a>, checkout our upcoming game <a href="http://godhatescharades.com/">God Hates Charades</a>.
