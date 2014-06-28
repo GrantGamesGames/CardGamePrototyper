@@ -13,6 +13,7 @@ angular.module('cardGamePrototyper')
 		$scope.import = function() {
 			if ($scope.data) {
 				user.setCsvWithStr($scope.data);
+				ga('send', 'event', 'import', 'csv');
 				$state.go('print');
 			}
 		};

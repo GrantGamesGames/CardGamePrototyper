@@ -21,6 +21,7 @@
   "globals": {
     "angular": false,
     "_": false,
+    "ga": false,
     "CSV": false
   }
 }
