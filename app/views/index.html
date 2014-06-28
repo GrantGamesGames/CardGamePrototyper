@@ -3,163 +3,150 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <base href="/">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(app) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css({.tmp,app}) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/import.css">
-    <link rel="stylesheet" href="styles/print.css">
-    <!-- endbuild -->
-  </head>
-  <body ng-app="cardGamePrototyper">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<base href="/">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<!-- build:css(app) styles/vendor.css -->
+		<!-- bower:css -->
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:css({.tmp,app}) styles/main.css -->
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/import.css">
+		<link rel="stylesheet" href="styles/print.css">
+		<!-- endbuild -->
+	</head>
+	<body ng-app="cardGamePrototyper">
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="container">
-      <nav></nav>
-      <div class="viewLoader"
-         ng-class="{loading: isViewLoading}">
-         <p>Loading...</p>
-      </div>
-      <div ui-view
-           autoscroll='false'>
-      </div>
-      
-      <div class="row doNotPrint">
-        <div class="col-md-12">
-          <h1>
-            <a name="user-content-cardgameprototyper" class="anchor" href="#cardgameprototyper" aria-hidden="true">
-              <span class="octicon octicon-link"></span>
-            </a>CardGamePrototyper</h1>
+		<!-- Add your site or application content here -->
+		<div class="container">
+			<nav></nav>
+			<div class="viewLoader"
+				 ng-class="{loading: isViewLoading}">
+				 <p>Loading...</p>
+			</div>
+			<div ui-view
+					 autoscroll='false'>
+			</div>
+			
+			<div class="row doNotPrint">
+				<div class="col-md-12">
+					<h1>
+						<a name="user-content-cardgameprototyper" class="anchor" href="#cardgameprototyper" aria-hidden="true">
+							<span class="octicon octicon-link"></span>
+						</a>CardGamePrototyper</h1>
 
-          <p>CSV -&gt; printable card game.</p>
+					<p>CSV -&gt; printable card game.</p>
 
-          <h2>
-            <a name="user-content-what-is-this" class="anchor" href="#what-is-this" aria-hidden="true">
-              <span class="octicon octicon-link"></span>
-            </a>What is this?</h2>
+					<h2>
+						<a name="user-content-what-is-this" class="anchor" href="#what-is-this" aria-hidden="true">
+							<span class="octicon octicon-link"></span>
+						</a>What is this?</h2>
 
-          <p>This tool takes in CSV take and generates a printable card game. Works in Chrome, Safari, Firefox as far as I know. I recommend Chrome as its handling of printing is the best.</p>
+					<p>This tool takes in CSV take and generates a printable card game. Works in Chrome, Safari, Firefox as far as I know. I recommend Chrome as its handling of printing is the best.</p>
 
-          <h2>
-            <a name="user-content-thanks-for-this-free-tool-how-do-i-complain" class="anchor" href="#thanks-for-this-free-tool-how-do-i-complain" aria-hidden="true">
-              <span class="octicon octicon-link"></span>
-            </a>Thanks for this free tool, how do I complain?</h2>
+					<h2>
+						<a name="user-content-thanks-for-this-free-tool-how-do-i-complain" class="anchor" href="#thanks-for-this-free-tool-how-do-i-complain" aria-hidden="true">
+							<span class="octicon octicon-link"></span>
+						</a>Thanks for this free tool, how do I complain?</h2>
 
-          <p>This tool is pretty new, so don't expect much, but if you run in to any problems please report them on <a href="https://github.com/astrism/CardGamePrototyper/issues">GitHub Issues</a>!</p>
+					<p>This tool is pretty new, so don't expect much, but if you run in to any problems please report them on <a href="https://github.com/astrism/CardGamePrototyper/issues">GitHub Issues</a>!</p>
 
-          <h2>
-            <a name="user-content-how-do-i-use-this" class="anchor" href="#how-do-i-use-this" aria-hidden="true">
-              <span class="octicon octicon-link"></span>
-            </a>How do I use this?</h2>
+					<h2>
+						<a name="user-content-how-do-i-use-this" class="anchor" href="#how-do-i-use-this" aria-hidden="true">
+							<span class="octicon octicon-link"></span>
+						</a>How do I use this?</h2>
 
-          <p>Grab a CSV file, I use Google Spreadsheets to put mine together and most spreadsheet apps can export to csv. Your CSV can have any fields but the app only uses these:</p>
+					<p>Grab a CSV file, I use Google Spreadsheets to put mine together and most spreadsheet apps can export to csv. Your CSV can have any fields but the app only uses these:</p>
 
-          <ul class="task-list">
-            <li>Name</li>
-            <li>Quantity</li>
-            <li>Hint</li>
-            <li>Description</li>
-          </ul>
-          <p>Here is an example:</p>
+					<ul class="task-list">
+						<li>Name</li>
+						<li>Quantity</li>
+						<li>Hint</li>
+						<li>Description</li>
+					</ul>
 
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Quantity</th>
-                <th>Hint</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Seer</td>
-                <td>1</td>
-                <td>S</td>
-                <td>When instructed, pick one player and the moderator will tell you if they're a werewolf.</td>
-              </tr>
-              <tr>
-                <td>Werewolf</td>
-                <td>2</td>
-                <td>W</td>
-                <td>At nightfall open your eyes and pick a victim</td>
-              </tr>
-              <tr>
-                <td>Villager</td>
-                <td>4</td>
-                <td>V</td>
-                <td>At daybreak try to find the werewolf</td>
-              </tr>
-            </tbody>
-          </table>
-          <p>Which would produce when exported:</p>
+					<p>This is a basic Werewolf example which uses all the required fields listed above, and even has an extra field, Probability, that the app ignores.</p>
 
-<pre lang="csv"><code>Name,Quantity,Hint,Description
-Seer,1,S,"When instructed, pick one player and the moderator will tell you if they're a werewolf."
-Werewolf,2,W,At nightfall open your eyes and pick a victim
-Villager,4,V,At daybreak try to find the werewolf</code></pre>
+					<iframe width="100%"
+									height="200"
+									src="https://docs.google.com/spreadsheets/d/1W1_9gVEfpQlfFlWHbc9E0ZqS37XCZpAQnUs1sawd0gc/pubhtml?widget=true&amp;headers=false"></iframe>
 
-          <p>Next paste that csv data into the app and press
-            <strong>Import Data</strong>. This will convert the CSV to printable Poker Size (2.5" * 3.5") cards.</p>
+					<p>To recreate the doc above:</p>
+					<ul>
+						<li>Open the
+							<a href="https://docs.google.com/spreadsheets/d/1W1_9gVEfpQlfFlWHbc9E0ZqS37XCZpAQnUs1sawd0gc/edit?usp=sharing"
+							   target="_blank">
+								Google Docs Template</a>
+						</li>
+						<li>In Google Docs go to <i>File</i> -> <i>Make a copy...</i></li>
+						<li>Customise for your game</li>
+						<li>To get the csv from Google Docs, use <i>File</i> -> <i>Download as</i> -> <i>Comma Separated Values (.csv, current sheet)</i></li>
+					</ul>
+					
+					<p>Which would produce when exported:</p>
 
-          <p>Now print! When printing I recommend Landscape, which fits the most poker size cards.</p>
-        </div>
-      </div>
-      
-      <div class="footer doNotPrint">
-        <hr>
-        <p>You may use this tool for any project, including commercial games.</p>
-        <p>
-          Made by <a href="http://godhatesgames.com">God Hates Games</a>, checkout our upcoming game <a href="http://godhatescharades.com/">God Hates Charades</a>.
-        </p>
-      </div>
+<pre lang="csv"><code>Name,Quantity,Hint,Description,Probability
+Seer,1,S,"When instructed, pick one player and the moderator will tell you if they're a werewolf.",14%
+Werewolf,2,W,At nightfall open your eyes and pick a victim,29%
+Villager,4,V,At daybreak try to find the werewolf,57%</code></pre>
 
-    </div> <!-- /container -->
+					<p>Next paste that csv data into the app and press
+						<strong>Import Data</strong>. This will convert the CSV to printable Poker Size (2.5" * 3.5") cards.</p>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+					<p>Now print! When printing I recommend Landscape, which fits the most poker size cards.</p>
+				</div>
+			</div>
+			
+			<div class="footer doNotPrint">
+				<hr>
+				<p>You may use this tool for any project, including commercial games.</p>
+				<p>
+					Made by <a href="http://godhatesgames.com">God Hates Games</a>, checkout our upcoming game <a href="http://godhatescharades.com/">God Hates Charades</a>.
+				</p>
+			</div>
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+		</div> <!-- /container -->
 
-    <!--[if lt IE 9]>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]-->
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+		 <script>
+			 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <!-- build:js(app) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/underscore/underscore.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bower_components/comma-separated-values/csv.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+			 ga('create', 'UA-XXXXX-X');
+			 ga('send', 'pageview');
+		</script>
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/import.js"></script>
-        <script src="scripts/controllers/print.js"></script>
-        <script src="scripts/services/user.js"></script>
-        <!-- endbuild -->
+		<!--[if lt IE 9]>
+		<script src="bower_components/es5-shim/es5-shim.js"></script>
+		<script src="bower_components/json3/lib/json3.min.js"></script>
+		<![endif]-->
+
+		<!-- build:js(app) scripts/vendor.js -->
+		<!-- bower:js -->
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/underscore/underscore.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="bower_components/comma-separated-values/csv.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+
+				<!-- build:js({.tmp,app}) scripts/scripts.js -->
+				<script src="scripts/app.js"></script>
+				<script src="scripts/controllers/import.js"></script>
+				<script src="scripts/controllers/print.js"></script>
+				<script src="scripts/services/user.js"></script>
+				<!-- endbuild -->
 </body>
 </html>
