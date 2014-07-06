@@ -46,4 +46,11 @@ Next paste that csv data into the app and press **Import Data**. This will conve
 
 Now print! When printing I recommend Landscape, which fits the most poker size cards.
 
+## Is this printer friendly?
+Yes. We use css to hide the instructions. Just go file print in your browser. For best results print in landscape mode.
 
+## How often will you be making updates to this tool?
+We will be trying to update every two weeks with a rev. The tool is also open source so if your an awesome developer we welcome your support. 
+
+## How do I get feature request in the builds?
+Wow! You want a lot for nothing. No seriously. Thanks for the feedback. Post in the issues tracker on github or email team AT godhatesgames.com
