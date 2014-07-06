@@ -6,10 +6,6 @@ CSV -> printable card game.
 
 This tool takes in CSV take and generates a printable card game. Works in Chrome, Safari, Firefox as far as I know. I recommend Chrome as its handling of printing is the best.
 
-## Thanks for this free tool, how do I complain?
-
-This tool is pretty new, so don't expect much, but if you run in to any problems please report them on [GitHub Issues](https://github.com/astrism/CardGamePrototyper/issues)!
-
 ## How do I use this?
 
 Grab a CSV file, I use Google Spreadsheets to put mine together and most spreadsheet apps can export to csv. Your CSV can have any fields but the app only uses these:
@@ -53,4 +49,4 @@ Yes. We use css to hide the instructions. Just go file print in your browser. Fo
 We will be trying to update every two weeks with a rev. The tool is also open source so if your an awesome developer we welcome your support. 
 
 ## How do I get feature request in the builds?
-Wow! You want a lot for nothing. No seriously. Thanks for the feedback. Post in the issues tracker on github or email team AT godhatesgames.com
+Wow! You want a lot for nothing. No seriously. Thanks for the feedback. Post in the [issues tracker on GitHub](https://github.com/astrism/CardGamePrototyper/issues) or email team AT godhatesgames.com
